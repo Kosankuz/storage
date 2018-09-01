@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/master.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title></title>
+  </head>
+  <body>
+<div class="container">
+
+
+    <ol class="progress-bar-">
+        <li class="progress-bar__steps not-current">
+            <span class="progress-bar__steps--numbers"></span>
+            <span class="progress-bar__steps--text">Select a Bill</span>
+        </li>
+        <li class="progress-bar__steps current">
+            <span class="progress-bar__steps--numbers"></span>
+            <span class="progress-bar__steps--text">Make a Payment</span>
+        </li>
+        <li class="progress-bar__steps not-current">
+            <span class="progress-bar__steps--numbers"></span>
+            <span class="progress-bar__steps--text">Payment Confirmation</span>
+        </li>
+        <li class="progress-bar__steps not-current">
+            <span class="progress-bar__steps--numbers"></span>
+            <span class="progress-bar__steps--text">Payment Confirmation</span>
+        </li>
+    </ol>
+</div>
+  </body>
+</html>
