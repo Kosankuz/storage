@@ -62,11 +62,11 @@
   }
 }
 .progress-bar- .current {
-  background: #647d5e;
+  background: #00BEA3;
   color: #fff;
 }
 .progress-bar- .current:after {
-  border-left: 30px solid #647d5e;
+  border-left: 30px solid #00BEA3;
 }
 
 @media screen and (min-width: 800px) {
