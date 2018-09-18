@@ -20,8 +20,8 @@ $result = mysqli_query($db, $query);
 $row = mysqli_fetch_array($result);
 
 
-echo "user id " . $row['user_id'] . "<br>" ;
-echo "user name " . $row['user_login'] . "<br>" ;
+echo "user id " . $row['id'] . "<br>" ;
+echo "user name " . $row['login'] . "<br>" ;
 
 
 
