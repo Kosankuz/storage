@@ -19,7 +19,7 @@ $_SESSION['logged_user'] = $user;
 echo '<div style="color:green;">"You have logged in <br> You now can go to <a href="/"> Main </a> page! "</div><hr>';
 
 } else {
-  $errors[] = 'Incorrect passowrd';
+  $errors[] = 'Incorrect password';
 }
 
   }else{
