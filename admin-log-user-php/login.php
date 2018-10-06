@@ -1,7 +1,7 @@
 <?php
 
 require 'db.php';
-require 'db_log.php';
+//require 'db_log.php';
 require 'get_ip.php';
 
 $data = $_POST;
@@ -28,7 +28,7 @@ if ( password_verify($data['password'],$password_array['password']) ) // checkin
 { //if all good we need to login the user and log the user
 $login_status = "yes";
 $log_query = "INSERT INTO logs  VALUES (NULL, '$login', '$time_stamp', '$user_ip' , '$login_status')";
-mysqli_query($db_log, $log_query);
+mysqli_query($db, $log_query);
 
 $_SESSION['logged_user'] = $login;
 header('Location: /index.php');
@@ -45,7 +45,7 @@ header('Location: /index.php');
 if( ! empty($errors) ){
   $login_status = "No";
   $log_query = "INSERT INTO logs  VALUES (NULL, '$login', '$time_stamp', '$user_ip' , '$login_status')";
-  mysqli_query($db_log, $log_query);
+  mysqli_query($db, $log_query);
 
 echo '<div style="color:red;">'. array_shift($errors). '</div><hr>';
  }
