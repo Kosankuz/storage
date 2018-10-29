@@ -1,10 +1,11 @@
 <?php
 
 require 'db.php';
-require 'db_log.php';
+
 require 'get_ip.php';
 
 $data = $_POST;
+
 
 if(isset($data['do_login']) ){ // if login button is pressed do
 $errors = array();
@@ -52,7 +53,7 @@ echo '<div style="color:red;">'. array_shift($errors). '</div><hr>';
 }
 
  ?>
- <form class="" action="/login.php" method="POST">
+ <form class="" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
    <p>
     <p> <strong>Login</strong>:</p>
      <input type="text" name="login" value="">

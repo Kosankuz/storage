@@ -1,7 +1,7 @@
 
 <?php
 require "db.php";
-require 'db_log.php';
+
 ?>
 <?php if(isset($_SESSION['logged_user']) ) : /* checking if user already authorised  and if yes then*/ ?>
 
