@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Admin Discount</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="js/read.js" async></script>
+  <script src="js/write.js" async></script>
+  <script src="js/activate.js" async></script>
+  <script src="js/remove.js" async></script>
+  <script src="js/save.js" async></script>
+
+</head>
+
+<body>
+
+  <div class="container" style="width:500px;margin:0 auto;">
+    
+      <!-- timer block -->
+      <div class="row">
+        <div class="col-md-12" style="height:auto;width:600px;">
+          <h1 class="text-center" style="color:#00BEA3">...</h1>
+          <div class="" style="margin:0px 0 20px 0px;height:120px;width:568px;background-color: white;border:1px solid #00BEA3;">
+            <div class="" style="width:100%;height: 17%;text-align:center;border-bottom:1px solid #00BEA3">
+              <h5 class="coolText text-center">Discount Configuration</h5>
+            </div>
+            <div class="container" style="padding: 15px;width:100%;height:auto;" style="">
+              <div class="" style="">
+                <p>
+                  <span>Bonus: </span> <input id="bonus" type="text" name="" value="" size="5" required> <span class="controllClass"> %</span> Amount <input id="amount" type="text" name="" value="" size="5" required><span class="controllClass"></span>
+                  <button id="addButton" type="button" class="btn btn-sm btn-primary controllClass" style="background-color:#00BEA3;margin:0 0 10px 25px;width: auto; font-size:13px; ">Add</button>
+                </p>
+                <br>
+              </div>
+            </div>
+          </div>
+          <!--top box end-->
+          <div class="" style="background-color: white;border:1px solid #00BEA3;width:568px">
+            <div class="" style="padding-top: 15px;width:auto;height:auto;" style="">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col" class=" tableSmallFont text-center"></th>
+                    <th scope="col" class=" tableSmallFont text-center">Bonus </th>
+                    <th scope="col" class=" tableSmallFont text-center">Amount</th>
+                    <th scope="col" class=" tableSmallFont text-center"></th>
+                    <th scope="col" class=" tableSmallFont text-center"></th>
+                  </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+              </table>
+
+
+
+            </div>
+          </div>
+          <!--end of bottom box-->
+        </div>
+      </div>
+      <!--end of block-->
+    
+  </div>
+</body>
+</html>

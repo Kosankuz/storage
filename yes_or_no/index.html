@@ -3,33 +3,66 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <style media="screen">
+
+
+.ball {
+  position: relative;
+  width: $cirle-width;
+  border-radius: 50%;
+  transition: all .3s ease;
+}
+
+    </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="./js/index.js">  </script>
+  <!--  <script type="text/javascript" src="./js/index.js">  </script> -->
     </head>
   <body>
-
-    <div class="" style="width:10%;height:200px;margin:0 auto; border:1px dotted black;">
-<div class="" id="yes" style="width:100%border:1px solid black;display: inline;">
-  <h1>YES</h1>
-</div>
-<div class="" id="no" style="width:100%border:1px solid black;display: inline;float:right">
-  <h1>NO</h1>
-</div>
+    <div id="ball"class="ball" style="text-align: center;width:200px;height:200px;margin:0 auto; border:1px dotted black;border-radius:100%;background-color:black">
+      <p id="output"style="color:white;"></p>
     </div>
-
-    <div style="width:500px;margin:0 auto;">
-      <button type="button" name="button" style="width:100%" id="button"> ASK </button>
+    <span id="output2"style=";color:black;font-weight:bold;border-radius:50%"></span>
+    <div style="width:500px;margin:0 auto;display:flex;justify-content:space-around;margin-top:20px;">
+      <button type="button" name="button" style="" id="button">Ask The Ball</button>
     </div>
     <div class="">
-      <p id="output"></p>
+      <p id="x"></p>
     </div>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#output").hide();
+  var answers = ['It is certain.','It is decidedly so.','Without a doubt.','Yes - definitely.','You may rely on it.','As I see it, yes.','Most likely.','Outlook good.','Yes.','Signs point to yes.','Reply hazy, try again','Ask again later.','Better not tell you now.','Cannot predict now.','Concentrate and ask again.','Dont count on it.',' My reply is no.','My sources say no.','Outlook not so good.','Very doubtful.'];
 
-    <p>
-  Count Odd :    <span id="odd"></span>
-    </p>
-    <p>
-  Count Even :    <span id="even"></span>
-    </p>
-  </body>
+//function determineOdd(num){
+//  return num % 2;
+//};
+function randomize(number){
+return Math.floor((Math.random(number) * Math.floor(20)) * 1 );
+}
+$("#button").click(function(){
+  var x = 35;
+  var MyNumber = randomize(answers.length);
+  $("#output").html(answers[MyNumber]);
+  $("#output").fadeIn();
+
+  var interval = setInterval(function(){
+  x++;
+
+  var height = x + 'px';
+  $("#output").css('margin-top', height);
+  //$("#output2").html(x); // Random number display . Array index
+if (x > 84 ){
+  clearInterval(interval);
+}
+},50)
+
+window.setTimeout(function(){
+    $("#output").fadeOut();
+  },2700)
+});
+});
+
+</script>
 </html>
