@@ -1,0 +1,144 @@
+
+html body{
+  background-color: black;
+}
+
+.one{
+
+  animation:spin 30s linear infinite ;
+  margin: auto;
+}
+
+
+.one:hover{
+animation:stop;
+
+}
+
+.two{
+  animation:spin 30s linear infinite ;
+  margin: auto;
+}
+
+.two:hover{
+animation:stop;
+
+}
+
+.three{
+  animation:spin 30s linear infinite;
+  margin: auto;
+}
+
+.three:hover{
+animation:stop;
+
+}
+
+.four{
+animation:spin 30s linear infinite;
+margin: auto;
+}
+
+.four:hover{
+animation:stop;
+
+
+}
+
+.five{
+animation:spin 30s linear infinite ;
+margin: auto;
+}
+
+.five:hover{
+animation:stop;
+
+}
+.six{
+animation:spin 30s linear infinite ;
+margin: auto;
+}
+
+.six:hover{
+animation:stop;
+
+}
+.seven{
+animation:spin 30s linear infinite ;
+margin: auto;
+}
+
+.seven:hover{
+
+animation:stop;
+}
+
+
+.circleSize{
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg);  } }
+
+div{
+
+margin:auto;
+
+}
+
+.space{
+  margin-top: 30px;
+
+}
+
+.glowViolet {
+  text-align: center;
+
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #3e42d2, 0 0 40px #5154d2, 0 0 50px #1a1fdd, 0 0 60px #1418be, 0 0 70px #8585a1;
+
+}
+.glowIndigo {
+  text-align: center;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #6a79eb, 0 0 40px #7b8af9, 0 0 50px #6a79eb, 0 0 60px #808ef6, 0 0 70px #455afa;
+
+}
+.glowBlue {
+  text-align: center;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00a3ff, 0 0 40px #56b3e8, 0 0 50px #00a3ff, 0 0 60px #66b5e2, 0 0 70px #00a3ff;
+
+}
+
+.glowGreen {
+  text-align: center;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #3bff00, 0 0 40px #66ee4a, 0 0 50px #95e97c, 0 0 60px #a3f48b, 0 0 70px #3bff00;
+
+}
+
+.glowYellow {
+  text-align: center;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fffc00, 0 0 40px #e3e132, 0 0 50px #fffc00, 0 0 60px #fffe93, 0 0 70px #fffc00;
+
+}
+.glowOrange {
+  text-align: center;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff5c00, 0 0 40px #ff5c00, 0 0 50px #ff7300, 0 0 60px #ffaa63, 0 0 70px #ff7300;
+
+}
+.glowRed {
+  text-align: center;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #be0000, 0 0 40px #da0b0b, 0 0 50px #d66547, 0 0 60px #ff0606, 0 0 70px #f54811;
+
+}
+
+
+img{
+
+   height: inherit;
+   width: inherit;
+   background-color: white;
+
+}

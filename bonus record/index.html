@@ -2,11 +2,80 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+<style media="screen">
 
+a {
+  color:#00BEA3;
+  font-family: Comic Sans MS;
+  text-decoration: none;
+}
+.admin {
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(180deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(180deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(180deg); transform:rotate(180deg); } }
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00BEA3, 0 0 40px #00BEA3, 0 0 50px #00BEA3, 0 0 60px #00BEA3, 0 0 70px #00BEA3;
+
+}
+.glow:hover{
+  text-shadow: 0 0 20px #fff, 0 0 30px #a1b4b1, 0 0 40px #a1b4b1, 0 0 50px #a1b4b1, 0 0 60px #a1b4b1, 0 0 70px #a1b4b1, 0 0 80px #00BEA3;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.dashboard {
+  font-family: Trebuchet MS;
+  text-decoration: none;
+  background-color: none;
+
+}
+
+.rdiv {
+-ms-transform: rotate(0deg); /* IE 9 */
+-webkit-transform: rotate(0deg); /* Safari */
+transform: rotate(0deg);
+}
+.ldiv {
+-ms-transform: rotate(-15deg); /* IE 9 */
+-webkit-transform: rotate(-15deg); /* Safari */
+transform: rotate(-15deg);
+
+}
+
+</style>
     <title></title>
   </head>
-  <body>
-<a href="http://localhost:8000/admin.html">admin</a>
-<a href="http://localhost:8000/user.html">dashboard</a>
+  <body style="background-color:#000000" >
+    <div class="container" style="width:700px;margin:auto;margin-top:10%">
+      <div class="row" style="display:flex;font-size:100px" >
+        <div class="col-md-2 rdiv text-center" style="margin-top:65px;">
+          <a id="dashboard" href="http://localhost:8000/user.html" class="dashboard glow" style="background-color:inherit">Dashboard</a>
+        </div>
+        <div class="col-md-2 ldiv " style="margin-left:490px;position:absolute">
+          <a id="admin" class="glow" href="http://localhost:8000/admin.html">admin</a>
+        </div>
+      </div>
+    </div>
+
+<script type="text/javascript">
+document.getElementById("dashboard").addEventListener("mouseover", mouseOver);
+document.getElementById("dashboard").addEventListener("mouseout", mouseOut);
+
+function mouseOver() {
+  document.getElementById("dashboard").style.width = "400px";
+}
+
+function mouseOut() {
+  document.getElementById("dashboard").style.width = "auto";
+}
+</script>
   </body>
 </html>

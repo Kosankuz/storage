@@ -9,6 +9,7 @@ $(document).ready(function() {
 
 
 sendData(whichBonus,whichBonus1);
+
 location.reload();
 
 })

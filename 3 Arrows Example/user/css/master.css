@@ -1,0 +1,13 @@
+
+.block{
+
+margin:0 auto;
+  border-radius: 12px;
+  background-color:#f0f0f0;
+
+}
+
+.korobochka{
+  border: 1px solid black;
+  width: 100px;
+}

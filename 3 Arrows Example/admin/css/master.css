@@ -1,0 +1,21 @@
+
+input{
+  text-align: center;
+  width: 50% !important;
+}
+.saleInput{
+display: flex;
+}
+
+.block:nth-of-type(1n){
+
+ margin: 10px 0 ;
+
+}
+
+span{
+text-align: center;
+}
+.btn-block+.btn-block {
+     margin-top: 0px;
+}
